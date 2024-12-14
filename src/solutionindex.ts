@@ -5,6 +5,7 @@ import { solution4 } from "./4/solution";
 import { solution5 } from "./5/solution";
 import { solution6 } from "./6/solution";
 import { solution7 } from "./7/solution";
+import { solution8 } from "./8/solution";
 import { Solution } from "./solution";
 
 export default function getSolution(id: string) : Solution | undefined {
@@ -16,6 +17,7 @@ export default function getSolution(id: string) : Solution | undefined {
         case "5": return solution5;
         case "6": return solution6;
         case "7": return solution7;
+        case "8": return solution8;
         default: return undefined;
     }
 }
