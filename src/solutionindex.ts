@@ -1,4 +1,5 @@
 import { solution1 } from "./1/solution"
+import { solution10 } from "./10/solution";
 import { solution2 } from "./2/solution";
 import { solution3 } from "./3/solution";
 import { solution4 } from "./4/solution";
@@ -20,6 +21,7 @@ export default function getSolution(id: string) : Solution | undefined {
         case "7": return solution7;
         case "8": return solution8;
         case "9": return solution9;
+        case "10": return solution10;
         default: return undefined;
     }
 }
