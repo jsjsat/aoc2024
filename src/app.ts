@@ -7,7 +7,7 @@ const app = express();
 app.get('/:id', async (req, res) => {
   let id = req.params.id;
   let solution = getSolution(id);
-  res.send(solution?.compute());
+  res.send("<p style='font-family:monospace'>" + solution?.compute() + "</p>");
 });
 
 app.listen(3000, () => {
